@@ -1,0 +1,52 @@
+// Global chopstick settings: open and tweak this file.
+
+	@import "../../_chopstick/scss/settings";
+
+// Chopstick mixins
+
+	@import "../../_chopstick/scss/shared/functions";
+	@import "../../_chopstick/scss/shared/mixins";
+	@import "../../_chopstick/scss/shared/grid";
+	@import "../../_chopstick/scss/shared/typography";
+	@import "../../_chopstick/scss/shared/ui";
+
+// Snippet styles
+
+// Give some padding to the image grid
+.grid-block {
+	@include padding-bottom(1);
+}
+
+// Media wrapper snippet
+.media-wrapper {
+	position: relative;
+	overflow: hidden;
+
+	@include margin-bottom(1);
+}
+
+.media-wrapper img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.ratio--sixteen-nine {
+	padding-top: 56.25%; // 9/16 * 100
+}
+
+// Lazy loading fade-in
+.js .lazy-load img {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s;
+	   -moz-transition: opacity 0.3s;
+	    -ms-transition: opacity 0.3s;
+	        transition: opacity 0.3s;
+}
+
+.js .lazy-load img.is-lazy-loaded {
+	opacity: 1;
+}
+
+
