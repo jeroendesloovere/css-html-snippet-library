@@ -1,0 +1,36 @@
+/*
+  Functions
+*/
+/*
+	Patterns
+*/
+/*
+	Grid
+*/
+/*
+	Typography
+*/
+/*
+	User Interface Elements
+*/
+/*
+	Pagination mixin
+*/
+.media-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #dddddd; }
+
+.media-wrapper img {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.ratio--four-three {
+  padding-top: 75%; }
+
+.ratio--sixteen-nine {
+  padding-top: 56.25%; }
+
+.ratio--square {
+  padding-top: 95%; }
