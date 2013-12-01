@@ -1,0 +1,68 @@
+// Global chopstick settings: open and tweak this file.
+
+	@import "../../_chopstick/scss/settings";
+
+// Chopstick mixins
+
+	@import "../../_chopstick/scss/shared/functions";
+	@import "../../_chopstick/scss/shared/mixins";
+	@import "../../_chopstick/scss/shared/grid";
+	@import "../../_chopstick/scss/shared/typography";
+	@import "../../_chopstick/scss/shared/ui";
+
+// Snippet styles
+.media {
+	@extend %clearfix;
+}
+
+.media--list {
+	margin-bottom: 3em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.media__img {
+		@include box-(4,0,2);
+	}
+
+	.media__img--rev {
+		@include box-(4,2,0);
+	}
+
+	.media__body {
+		@include box-(8,0,0);
+	}
+}
+
+.media--block {
+	.media__img {
+		margin-bottom: 1em;
+	}
+}
+
+.image-wrapper {
+	position: relative;
+	overflow: hidden;
+	background-color: $gamma-ui-color;
+}
+
+.image-wrapper img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+// Ratio
+.ratio--four-three {
+	padding-top: 75%; // 3/4 * 100
+}
+
+.ratio--sixteen-nine {
+	padding-top: 56.25%; // 9/16 * 100
+}
+
+.ratio--square {
+	padding-top: 95%; // 1/1 * 100 (-5 for optical correction)
+}
