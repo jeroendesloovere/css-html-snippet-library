@@ -19,12 +19,12 @@
 .grid-block {
   padding-bottom: 1.5em; }
 
-.media-wrapper {
+.mask {
   position: relative;
   overflow: hidden;
   margin-bottom: 1.5em; }
 
-.media-wrapper img {
+.mask img {
   position: absolute;
   top: 0;
   width: 100%; }

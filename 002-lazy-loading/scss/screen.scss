@@ -18,14 +18,14 @@
 }
 
 // Media wrapper snippet
-.media-wrapper {
+.mask {
 	position: relative;
 	overflow: hidden;
 
 	@include margin-bottom(1);
 }
 
-.media-wrapper img {
+.mask img {
 	position: absolute;
 	top: 0;
 	width: 100%;

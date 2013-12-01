@@ -16,12 +16,12 @@
 /*
 	Pagination mixin
 */
-.media-wrapper {
+.mask {
   position: relative;
   overflow: hidden;
   background-color: #dddddd; }
 
-.media-wrapper img {
+.mask img {
   position: absolute;
   top: 0;
   width: 100%; }
