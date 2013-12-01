@@ -2,8 +2,7 @@
 // module: home
 //
 
-.intro-holder,
-.snippet-holder {
+.intro-holder {
 	@include padding-top(2);
 }
 
@@ -24,14 +23,8 @@
 
 }
 
-.snippet {
+.main-col-6 {
 	@include box-(12,1,1);
-
-	.inner {
-		@include padding-top(2);
-		@include padding-bottom(2);
-		border-top: 1px solid lighten($alpha-text-color,60);
-	}
 }
 
 //
@@ -42,6 +35,14 @@
 
 	.intro-holder {
 		@include padding-top(2);
+	}
+
+}
+
+@media (min-width: $bp4) {
+
+	.main-col-6 {
+		@include box-(6,1,1);
 	}
 
 }
