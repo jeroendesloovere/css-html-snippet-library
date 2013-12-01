@@ -24,38 +24,92 @@
 /*
 	Pagination mixin
 */
-.media--list {
-  margin-bottom: 3em; }
-  .media--list:last-child {
+.media {
+  margin-bottom: 2em; }
+  .media:last-child {
     margin-bottom: 0; }
+  .media .media__img,
+  .media .media__img--rev {
+    margin-bottom: 1em; }
+
+.media--block {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px; }
+  @media screen and (min-width: 30em) {
+    .media--block {
+      width: 100%;
+      float: left;
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px; } }
+  @media screen and (min-width: 42.5em) {
+    .media--block {
+      width: 33.33333%;
+      float: left;
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.media--list .media__img,
+.media--list .media__img--rev,
+.media--list .media__body {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px; }
+@media screen and (min-width: 30em) {
+  .media--list .media__img {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px; } }
+@media screen and (min-width: 60em) {
   .media--list .media__img {
     width: 33.33333%;
     float: left;
     position: relative;
-    padding-left: 0px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 20px; } }
+@media screen and (min-width: 30em) {
+  .media--list .media__img--rev {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 10px; } }
+@media screen and (min-width: 60em) {
   .media--list .media__img--rev {
     width: 33.33333%;
     float: left;
     position: relative;
     padding-left: 20px;
-    padding-right: 0px; }
+    padding-right: 10px; } }
+@media screen and (min-width: 30em) {
+  .media--list .media__body {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (min-width: 60em) {
   .media--list .media__body {
     width: 66.66667%;
     float: left;
     position: relative;
-    padding-left: 0px;
-    padding-right: 0px; }
+    padding-left: 10px;
+    padding-right: 10px; } }
 
-.media--block .media__img {
-  margin-bottom: 1em; }
-
-.image-wrapper {
+.mask {
   position: relative;
   overflow: hidden;
   background-color: #dddddd; }
 
-.image-wrapper img {
+.mask img {
   position: absolute;
   top: 0;
   width: 100%; }

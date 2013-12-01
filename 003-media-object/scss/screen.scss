@@ -13,41 +13,76 @@
 // Snippet styles
 .media {
 	@extend %clearfix;
-}
 
-.media--list {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 
-	.media__img {
-		@include box-(4,0,2);
-	}
-
+	.media__img,
 	.media__img--rev {
-		@include box-(4,2,0);
-	}
-
-	.media__body {
-		@include box-(8,0,0);
-	}
-}
-
-.media--block {
-	.media__img {
 		margin-bottom: 1em;
 	}
 }
 
-.image-wrapper {
+.media--block {
+	@include box-(12,0,0);
+
+	@include mq($bp2) {
+		@include box-(12,1,1);
+	}
+
+	@include mq($bp3) {
+		@include box-(4,1,1);
+	}
+}
+
+.media--list {
+	.media__img,
+	.media__img--rev,
+	.media__body {
+		@include box-(12,0,0);
+	}
+
+	.media__img {
+		@include mq($bp2) {
+			@include box-(6,1,2);
+		}
+
+		@include mq($bp4) {
+			@include box-(4,1,2);
+		}
+	}
+
+	.media__img--rev {
+		@include mq($bp2) {
+			@include box-(6,2,1);
+		}
+
+		@include mq($bp4) {
+			@include box-(4,2,1);
+		}
+	}
+
+	.media__body {
+		@include mq($bp2) {
+			@include box-(6,1,1);
+		}
+
+		@include mq($bp4) {
+			@include box-(8,1,1);
+		}
+	}
+}
+
+.mask {
 	position: relative;
 	overflow: hidden;
 	background-color: $gamma-ui-color;
 }
 
-.image-wrapper img {
+.mask img {
 	position: absolute;
 	top: 0;
 	width: 100%;

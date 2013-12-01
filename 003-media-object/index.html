@@ -51,8 +51,12 @@
 					<h2><strong>003 Media object</strong> — object oriented classes for image and text combinations.</h2>
 					<p>Combinations:</p>
 					<ol>
-						<li><strong>Block</strong> = media--block</li>
-						<li><strong>List</strong> = media--list</li>
+						<li><strong>.media</strong> = generic media class (set clearfix and spacing)</li>
+						<li><strong>.media--block</strong> = image and text as blocks on top of each other</li>
+						<li><strong>.media--list</strong> = image and text next to each other</li>
+						<li><strong>.media__img</strong> = image container (left aligned)</li>
+						<li><strong>.media__img--rev</strong> = reversed image container (right aligned)</li>
+						<li><strong>.media__body</strong> = text container</li>
 					</ol>
 				</div>
 			</div>
@@ -64,17 +68,17 @@
 		<div class="row">
 			<div class="snippet">
 				<div class="row inner">
-					<div class="media media--block grid-4">
+					<div class="media media--block">
 						<div class="media__img">
-							<div class="image-wrapper ratio--sixteen-nine">
+							<div class="mask ratio--sixteen-nine">
 								<img src="img/sample.jpg" alt="sample" />
 							</div>
 						</div>
 						<p class="media__body">When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film! Ven ve voke up, ve had zese wodies. Now, now. Perfectly symmetrical violence never solved anything.</p>
 					</div>
-					<div class="media media--block grid-4">
+					<div class="media media--block">
 						<div class="media__img">
-							<div class="image-wrapper ratio--sixteen-nine">
+							<div class="mask ratio--sixteen-nine">
 								<img src="img/sample.jpg" alt="sample" />
 							</div>
 						</div>
@@ -82,9 +86,9 @@
 							<p>When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film! Ven ve voke up, ve had zese wodies. Now, now. Perfectly symmetrical violence never solved anything.</p>
 						</div>
 					</div>
-					<div class="media media--block grid-4">
+					<div class="media media--block">
 						<div class="media__img">
-							<div class="image-wrapper ratio--sixteen-nine">
+							<div class="mask ratio--sixteen-nine">
 								<img src="img/sample.jpg" alt="sample" />
 							</div>
 						</div>
@@ -96,11 +100,11 @@
 				<div class="row inner">
 					<div class="media media--list">
 						<div class="media__img">
-							<div class="image-wrapper ratio--sixteen-nine">
+							<div class="mask ratio--sixteen-nine">
 								<img src="img/sample.jpg" alt="sample" />
 							</div>
 						</div>
-						<div class="media__body">
+						<div class="media__body"
 							<p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You, minion. Lift my arm. AFTER HIM! Doomsday device? Ah, now the ball's in Farnsworth's court! No argument here. Eeeee! Now say "nuclear wessels"! Now Fry, it's been a few years since medical school, so remind me. Disemboweling in your species: fatal or non-fatal?</p>
 						</div>
 					</div>
@@ -109,7 +113,7 @@
 							<p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You, minion. Lift my arm. AFTER HIM! Doomsday device? Ah, now the ball's in Farnsworth's court! No argument here. Eeeee! Now say "nuclear wessels"! Now Fry, it's been a few years since medical school, so remind me. Disemboweling in your species: fatal or non-fatal?</p>
 						</div>
 						<div class="media__img--rev">
-							<div class="image-wrapper ratio--sixteen-nine">
+							<div class="mask ratio--sixteen-nine">
 								<img src="img/sample.jpg" alt="sample" />
 							</div>
 						</div>
